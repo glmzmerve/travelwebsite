@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<div class="rez" >
+		
+	<form name="form1" action="rezerasyon1.php" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>3 gece 4 gün</p>
+<p>Gidiş-dönüş:uçakla</p>
+
+	<p>Fiyat: <span id="totalPricei"></span>£</p>
+ 
+ 
+
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" name="email" required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel" required />
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" required />	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişii" oninput="myFunctioni()"/>
+  
+ <br><br>
+<a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>  
+</select>
+</form>
+
+</div>
+<div class="prfransa"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="gosteri()"><b>1.gün</b></button>
+
+<div id="gün_i" style="display: none;">
+	<p>
+		İstanbul Havalimanı dış hatlar gidiş terminali Türk Hava Yolları saat 05.00’da buluşma. Bilet, bagaj ve pasaport işlemlerimizin ardından Türk Hava Yolları’nın TK1981 sefer sayılı uçuşu ile saat 08.00’de Londra’ya uçuyoruz. Yerel saat ile 10.05’te Londra Gatwick Havalimanı’na varış. Pasaport ve bagaj işlemlerimizin ardından havalimanından ayrılıp, bizi bekleyen özel aracımız ile Londra Şehir Turuna başlamak üzere hareket ediyoruz. Gerçekleştireceğimiz turumuzda Knights Bridge, Hyde Park, Natural History Müzesi, Thames Nehri, Buckingham Palace, Palace of Westminster, Big Ben, Trafalgar Meydanı, Amiral Nelson Anıtı, National Galery ve Picadilly Circus panoramik olarak görülecek yerler arasındadır. Şehir turunun ardından konaklama yapacağımız otelimize doğru yola çıkıyoruz. Gecelememiz Londra’daki otelimizde.
+	</p></div>
+	<button onclick="gosteri2()"><b>2.gün</b></button>
+
+	<div id="gün_i2" style="display: none;">
+	<p>
+		Otelimizde alacağımız kahvaltı sonrasında serbest zaman. Dileyen misafirlerimiz rehberimiz tarafından düzenlenecek ekstra Windsor ve Bicester Village Turuna katılabilirler. Gecelememiz Londra’daki otelimizde.
+
+Windsor ve Bicester Village Turu | 100 EUR Kişi Başı
+
+Turumuzdaki ilk durağımız William the Conqueror tarafından inşa ettirilen İngiltere’nin başlıca kraliyet konutlarından birini de bünyesinde barındıran Windsor olacak. Windsor’da yapacağımız yürüyüş turunun ardından ikinci durağımız olan Bicester Village ise outler alışveriş merkezleri ile ünlü olmuş bir kasabadır. Bicester Village Buckingham Sarayı'ndan sonra Birleşik Krallık'ta turistler tarafından en çok ziyaret edilen ikinci yer olmasıyla da öne çıkıyor. 
+	</p></div>
+	<button onclick="gosteri3()"><b>3.gün</b></button>
+
+	<div id="gün_i3" style="display: none;">
+	<p>
+		Otelimizde alacağımız kahvaltı sonrasında serbest zaman. Dileyen misafirlerimiz rehberimiz tarafından düzenlenecek ekstra Stratford ve Oxford Turuna katılabilirler. Gecelememiz Londra’daki otelimizde.
+
+Stratford ve Oxford Turu | 90 EUR Kişi Başı
+
+İngiliz edebiyatının en ünlü yazarı William Shakespeare'in memleketi olan Stratford Upon Avon küçük bir ortaçağ kasabasıdır. İngiltere'ye gelen turistlerin en çok görmek istedikleri ve ziyaret ettikleri yerlerin başında gelen ve William Shakespeare’in doğum yeri olan Stratford-upon-Avon'daki William Shakespeare'in evini de görerek turumuza devam ediyoruz. Birbirinden keyifli cafelerde zaman geçirebilmeniz ve alışveriş yapabilmeniz için verilecek serbest zamanın ardından Oxford’a geçiyoruz. İngiltere’nin üniversite şehri olarak geçen ve Harry Potter filmlerinin de çekildiği yer olarak dünyada ünlenen Oxford şehrini gezeceğiz.
+	</p></div>
+	<button onclick="gosteri4()"><b>4.gün</b></button>
+
+	<div id="gün_i4" style="display: none;">
+	<p>
+		Otelimizde alacağımız kahvaltı sonrasında check-out işlemlerimizi gerçekleştirip, havalimanına transfer saatine kadar serbest zaman. Rehberimizin bildireceği transfer saatinde İstanbul uçuşumuz için havaalanına doğru hareket ediyoruz. Bilet, bagaj ve pasaport işlemlerimiz sonrasında Türk Hava Yolları’nın TK1984 sefer sayılı uçuşu ile 22.10’da İstanbul’a uçuyoruz. Yerel saat ile 03.55’te İstanbul Havalimanı’na varışımız ile turumuzun sonu. Bir sonraki keyifli gezimizde buluşmak üzere veda ediyoruz. 
+	</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+</html>

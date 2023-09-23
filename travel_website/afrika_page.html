@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<div class="rez" ><form name="afrika"></form>
+		
+	<form name="form1" action="rezerasyon1.php" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>7 gece 8 gün</p>
+	<p>Gidiş-dönüş:uçakla</p>
+	<p>Fiyat: <span id="totalPriceaf"></span>$</p>
+ 
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" name="email" required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel" required />
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" required />	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişiaf" oninput="myFunctionaf()"/>
+  
+ <br><br>
+ <a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>  
+</select>
+</form>
+
+</div>
+<div class="pramerika"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="gosteraf()"><b>1.gün</b></button>
+
+<div id="gün_af" style="display: none;">
+	<p>
+		İstanbul Havalimanı Dış Hatlar Terminali'nde buluşuyoruz. Bilet ve bagaj islemlerinin ardından Türk Havayolları’na ait uçak ile Johannesburg’a hareket ediyoruz. Cape Town’a varışımızla birlikte, bizi bekleyen özel aracımıza binerek panoramik şehir turumuza başlıyoruz. Parlamento Binası, Company Gardens, Long Street, Ümit Kalesi, Reibeck Heykeli ve Adderly Caddesi görülecek yerler arasındadır. Şehir turu sonrası otele transfer oluyoruz ve odalarımıza yerleşiyoruz. Geceleme otelimizde.
+	</p></div>
+	<button onclick="gosteraf2()"><b>2.gün</b></button>
+
+<div id="gün_af2" style="display: none;">
+	<p>
+		Kahvaltının ardından serbest zaman. Dileyen yolcularımız ile opsiyonel Masa Dağı & Stellenbosh Çiftliği (Öğle yemekli) (145 USD Kişi Başı) gezisi yapılacaktır. Öncelikle Masa dağını ve yörenin ünlü içeceklerini tadacağımız turumuza çıkıyoruz. 45 dakikalık yolculuğumuzun ardından geleceğimiz bu çiftlikte; önce mahzenleri geziyor ardından tadım yapıyoruz. Daha sonra 1679’ da kurulmuş olan Stellenbosh kasabasına geçiyor ve şarapları, meşe ağaçları ve üniversitesi ile ünlü bu kasabada panoramik şehir turu yapıyoruz. Ardından Spier Çiftliğinde; Eagle Encounter’da Güney Afrika’nın vahşi kuşlarını görüyoruz. Restoranda alınacak öğle yemeği sonrasında Masa Dağı’nın 1087 m yükseklikteki tepesine çıkıp bu doyumsuz manzaranın büyüsüne kendinizi bırakabilirsiniz. Sonrasında otelimize dönüyoruz. Geceleme otelimizde.
+
+	</p></div>
+	<button onclick="gosteraf3()"><b>3.gün</b></button>
+
+<div id="gün_af3" style="display: none;"><p>
+	Sabah otelimizde alacağımız kahvaltının ardından tam gün serbest zaman. Alışveriş, dinlenme ve gezme fırsatı. Dileyen misafirlerimiz opsiyonel olarak düzenleyeceğimiz Ümit Burnu (Öğle yemekli) (155 USD Kişi Başı) gezimize katılabilirler. Bantry Bay, Camps Bay ve Llandudno Bölgelerinden geçip balıkçı kasabası olan Hout Bay’a varılacaktır. Tekne ile açılarak Duiker Adasındaki Cape kürklü foklarını göreceğiz. Daha sonra Chapmans Peak ya da Constantia Nek’den geçerek, Simons Town yakınındaki Boulders Beach’te Afrika Penguenlerini görüyoruz. Deniz kenarındaki restorantda alınacak öğle yemeğinden sonra Afrika’nın en güneybatı köşesi olan Barthelomios Diaz’ın keşfettiği Ümit Burnu ve Cape Point’te feniküler ile dünyanın en yüksek feneri görülecektir. Daha sonra farklı sahil kasabalarından geçerek Cape Town’a dönüyoruz. Geceleme otelimizde.</p></div>
+	<button onclick="gosteraf4()"><b>4.gün</b></button>
+
+<div id="gün_af4" style="display: none;"><p>
+	Sabah otelde alacağımız kahvaltının ardından Cape Town - Johannesburg uçuşumuzu gerçekleştirmek üzere havalimanına transfer oluyoruz. Havalimanına varış ve Johannesburg uçuşu gerçekleşiyor. Varışımızı takiben panoramik Johannesburg şehir turumuza başlıyoruz. Şehir Merkezi, Houghton-Mandela Evi, Rosebank, Sandton bölgeleri turumuz esnasında göreceğimiz yerler arasındadır. Dileyen misafirlerimiz yol üzerinde yapılacak olan opsiyonel Aslan Parkı turuna (85 USD Kişi Başı) katılabilirler. Aslan Parkı turumuzda, nadir bulunan beyaz aslan görme, kendi ortamlarında oyunlarını görme,  imkânı bulacağız. Turumuzun ardından otelimize dönüş ve geceleme Johannesburg’taki otelimizde.
+Johannesburg şehir turu ve opsiyonel tur Cape Town- Johannesburg uçuşuna göre programın 6.gününde yapılabilir.
+
+</p></div>
+<button onclick="gosteraf5()"><b>5.gün</b></button>
+
+<div id="gün_af5" style="display: none;"><p>
+	Sabah alınacak kahvaltıdan sonra serbest zaman. Dileyen misafirlerimiz opsiyonel olarak düzenlenecek olan Pilanesberg safari (125 USD Kişi Başı) turuna katılabilirler. Pilanesberg National Park’ta safari araçları ile yapılacak olan safari gezimizde doğal tabiatın içinde unutulmaz anılarla dolu, eşsiz saatler geçirme fırsatına sahip olacağımız Pilansberg National Park’da dağların arasında volkanik oluşumlu doğal bir tabiat ortamında yaşayan çeşitli vahşi hayvanların günlük yaşantısına konuk olacağız. Gezimiz süresince Big Five olarak tanımlanan aslan, leopar, fil, buffalo ve hippolari ayrıca 350 kuş türü, 65 sürüngen ve yüzlerce değişik hayvan çeşidini görme imkânı yakalayacağız;  safarinin ardından dinlenmek üzere otelimize transfer olacağız. Geceleme otelimizde.
+
+</p></div>
+<button onclick="gosteraf6()"><b>6.gün</b></button>
+
+<div id="gün_af6" style="display: none;"><p>
+	Sabah alınacak kahvaltıdan sonra Johannesburg’a hareket ediyoruz. Yol üzerinde dileyen misafirlerimiz için opsiyonel Lesedi Kültür Köyü turu öğle yemekli (95 USD Kişi Başı) yapma imkânı. Lesedi, Güney Afrika’da yaşayan siyah kabilelerin yaşam şekillerini, danslarını, gelenek ve göreneklerini yakından görebileceğiniz kültürel bir köydür. Turun başlangıcında video prezantasyonu ile siyah kültürlerin tarihi anlatılır daha sonra ufak gruplara ayrılarak Zulu-Xhosa-Basotho ve Pedi kabilelerinin ev yaşamlarını sergileyen alanlara girilir. Daha sonra kültürel Afrika dansları izlenir. Öğle yemeğimizi, opsiyonel tura dahil olarak Lesedi Kültürel Köyünde geleneksel Afrika mutfağı ile alıyoruz. Lesedi Köyü ziyareti sonrası yolumuza devam ediyoruz ve Sun City’e varıyoruz ve panoramik şehir turumuzu gerçekleştiriyoruz. Sun City Güney Afrika’nın kuzey batı eyaletinin bozkırlarında, sakin bir gölün kıyısındadır ve Pilanesberg’in heybetli dağlarıyla çevrilidir. Sun City, birçok özelliğinin birleşimiyle tatil beldeleri içinde benzersizdir. Her sene ihtişamlı sportif ve eğlence faaliyetleriyle donanmış dört ve beş yıldızlı otelleri ve büyülü Lost City (Kaybolmuş Şehir) binlerce turisti çeker. Varışa istinaden yaptığımız panoramik şehir turumuzun ardından otelimize yerleşiyoruz. Geceleme otelimizde.
+
+</p></div>
+<button onclick="gosteraf7()"><b>7.gün</b></button>
+
+<div id="gün_af7" style="display: none;"><p>
+	Sabah kahvaltıdan sonra transfer saatine kadar serbest süre. Daha sonra kararlaştırdığımız saatte buluşarak, İstanbul uçuşumuzu gerçekleştirmek üzere havalimanına transfer oluyoruz. Türk Havayollarına ait sefer ile İstanbul’a uçuş. Yeni güne uçakta gireceğiz.
+</p></div>
+<button onclick="gosteraf8()"><b>8.gün</b></button>
+
+<div id="gün_af8" style="display: none;"><p>
+	İstanbul Havalimanı’na varışımızla birlikte turumuz sona eriyor. Bir sonraki turumuzda görüşmek dileğiyle.
+</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+
+
+</html>

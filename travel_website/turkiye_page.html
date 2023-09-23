@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<div class="rez" >
+		
+	<form name="form1" action="rezerasyon1.php" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>2 gece 3 gün</p>
+<p>Gidiş-dönüş:uçakla</p>
+	<p>Fiyat: <span id="totalPricet"></span>£</p>
+ 
+ 
+
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" name="email" required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel"/ required>
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" / required>	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişit" oninput="myFunctiont()"/>
+  
+ <br><br>
+ <a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>  
+</select>
+</form>
+
+</div>
+<div class="pramerika"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="gostert()"><b>1.gün</b></button>
+
+<div id="gün_t" style="display: none;">
+	<span><b>Uçhisar Kalesi, Güvercinlik Vadisi, Çavuşin Köyü, Çanak - Çömlek Atölyesi, Kızılçukur Vadisi</b></span>
+	<p>
+		Belirtilen uçuş ile Kayseri’ ye uçuyoruz ve Kayseri Erkilet Havalimanında bizi bekleyen aracımıza binerek Güzel Atlar Ülkesi olarak adlandırılan Kapadokya bölgesine hareket ediyor ve bölgenin en önemli savunma noktası ve büyük yapısı olan Uçhisar Kalesi’ ni ziyaret ediyoruz. Kale gezisi sonrası ünlü coğrafyacı Strabon’ un Geografika adlı kitabında sık sık bahsettiği adını güvercinlerden alan Güvercinlik Vadisi’ ne giderek burada vadiyi izliyor ve fotoğraf molası veriyoruz. Bu molamızın ardından Kapadokya’ nın en güzel fotoğraflanabilen Avcılar ( Esentepe ) vadisine hareket ediyor ve burada sizlere küçük bir çay, kahve molası veriyoruz. Sonrasında kayaların oyulması ile kurulmuş olan ve bölgenin en eski kiliselerine sahip olan Çavuşin Köyü’ ne hareket ediyoruz. Buradaki gezimizden sonra öğle yemeğimiz için Avanos bölgesindeki kayaya oyma bir restaurant olan Uranos Restaurant’ a hareket ediyor ve muhteşem yemekleri tadıyoruz. Gezimize Hitit döneminden gelen 4000 yıllık el sanatları merkezi olan Avanos’ taki toprağın sanata dönüştüğü Çömlek Atölyelerinde ustalardan bu sanatın nasıl yapıldığına dair bilgiler alıyor ve fotoğraflıyoruz. Burada alışveriş için vereceğimiz serbest zaman sonrasında Kızılçukur Vadisine gidiyoruz ve manzara eşliğinde içeceklerimizi yudumluyoruz. Bugünlük turumuzu tamamlayıp otelimize hareket ediyor ve giriş işlemlerimizi gerçekleştiriyoruz. Akşam yemeği ve konaklama otelimizde.
+	</p></div>
+	<button onclick="gostert2()"><b>2.gün</b></button>
+
+<div id="gün_t2" style="display: none;">
+	<span><b>Kaymaklı Yeraltı Şehri, Onyx Atölyesi, Paşabağ Vadisi, Üç Güzeller, Ürgüp, Sinasos, Türk Gecesi</b></span>
+	<p>
+		Otelimizde aldığımız kahvaltının ardından temel amacı savunma ve normalde 8 katlı, 5000 kişinin yaşayabileceği büyüklükte olan Kaymaklı Yeraltı şehrine hareket ediyor ve burayı ziyaret edip rehberimizden detaylı bilgileri alıyoruz. Bu ziyaretimizden sonra Dünyaca ünlü Onyx atölyesini ziyaret ediyoruz ve Onyx hakkında bilgi alıyoruz. Öğle yemeğimiz için Avanos bölgesindeki Hanedan Restaurant’ a hareket ediyor ve muhteşem yemekleri tadıyoruz. Gezimize erken Hristiyanlık döneminde yaşam tarzlarıyla ünlenen Simon Stilit rahiplerinin hücrelerinin bulunduğu Paşabağları Vadisi ve değişik peribacaları ile dikkat çeken Dervent Vadisinde fotoğraf molası vererek devam ediyoruz. Üç Güzeller diye adlandırılan Ana, Baba, Çocuk peri bacalarını ziyaret edip devam ediyor ve günümüzde şaraplarıyla birçok ödül almış olan Turasan Şarap Mahzenlerini ziyaret ediyoruz. Sonrasında Ürgüp ilçe merkezinde alışveriş için sizlere serbest zaman veriyoruz. Turumuza eski bir Rum Köyü olan Mustafapaşa’ ya (Sinasos) hareket ediyor ve burada Rumların ve Osmanlı’ nın taş işçiliğini fotoğrafladıktan sonra bu köyde sizlere serbest zaman veriyoruz. Bugün ki gezimizi tamamlayıp otelimize dönüyoruz. Akşam yemeğimizi otelde aldıktan sonra dileyen misafirlerimiz bu akşam Kapadokya yöresine özgü kuzu gecesi diye tabir edilen Anadolu Dans Figürlerinin sergilendiği Türk Gecesi programına katılabilirler.(extra)
+	</p></div>
+	<button onclick="gostert3()"><b>3.gün</b></button>
+
+<div id="gün_t3" style="display: none;">
+	<span><b>Göreme Açıkhava Müzesi, Kayseri, Dönüş Yolculuğu</b></span>
+	<p>
+		Otelimizde aldığımız kahvaltının ardından oteldeki çıkış işlemlerimizi tamamlıyor ve Hristiyanlık’ ta manastır hayatının başladığı ve şekillendiği önemli merkezlerden biri olan Göreme Açıkhava Müzesi’ ni geziyoruz (Aziz Basil, Elmalı, Azize Barbara, Yılanlı, Tokalı, Çarıklı Kilise, Kiler, Yemekhane) Bu gezimizin ardından ve Kayseri’ ye hareket ediyoruz. Kayseri’ de ilk olarak Ağırnas Kasabasını ziyaret ediyoruz. Mimar Sinan‘ nın doğduğu kasaba olarak da bilinen, yörenin mimarisini ve kültürünü en güzel yansıtan yerleşim merkezlerinden biri olan Ağırnas‘ ı görerek Kent merkezine yol alıyoruz. Meşhur Kayseri Mantısından oluşan öğle yemeğimizi aldıktan sonra ihtişamlı görüntüsü ile kartpostallara konu olan Erciyes dağını görüyor şehir merkezine dönüyoruz. Şehirde Huand Hatun Ulu Camii, Huand Hatun’ un kümbeti ve Döner Kümbet’ i görüyor ve yöresel alışveriş için Kayseri Çarşısı’ nda serbest zaman veriyoruz. Serbest zamanın ardından Kayseri Havalimanı'na hareket ediyoruz. Belirtilen uçuş ile  İstanbul Sabiha Gökçen Havalimanı‘ na varıyoruz ve tekrar görüşmeyi dileyerek siz değerli misafirlerimiz ile vedalaşıyoruz.
+	</p></div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+</html>

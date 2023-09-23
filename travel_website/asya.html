@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<div class="rez" >
+		
+	<form name="form1" action="rezerasyon1.php" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>8 gece 9 gün</p>
+<p>Gidiş-dönüş:uçakla</p>
+	<p>Fiyat: <span id="totalPricea"></span>£</p>
+ 
+ 
+
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" name="email" required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel" required />
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" required />	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişia" oninput="myFunctiona()"/>
+  
+ <br><br>
+<a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>  
+</select>
+</form>
+
+</div>
+<div class="pramerika"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="gostera()"><b>1.gün</b></button>
+
+<div id="gün_as" style="display: none;">
+	<span><b>İSTANBUL – SEUL</b></span>
+	<p>
+		İstanbul Havalimanı Dış Hatlar Terminali'nde buluşuyoruz. Bilet ve bagaj işlemlerinin ardından Türk Havayolları’na ait sefer ile Seul’e hareket ediyoruz. Yerel saat ile akşamüstü saatlerinde Seul’e varıyor ve bizi bekleten özel aracımızla otelimize transfer oluyoruz. Geceleme otelimizde.
+
+	</p></div>
+<button onclick="gostera2()"><b>2.gün</b></button>
+
+<div id="gün_as2" style="display: none;">
+	<span><b>SEUL</b></span>
+	<p>
+		Kahvaltıdan sonra şehir turumuza başlıyoruz. Göreceğimiz yerler arasında 1395 Yılında Jaseon Hanedanı’nın kurucusu olan Kral Taejo tarafından yaptırılan Gyeongbokgung Sarayı, şehrin kalbinde yer alan Insa Dong caddesi ve birçok pahalı markaya ev sahipliği yapan Myeong-Dong caddesi göreceğimiz yerler arasında olacak. Turumuzun ardından otelimize hareket ediyoruz. Günün kalanında serbest zaman. Bu akşam dileyen misafirlerimiz ile ekstra Han Nehri Tekne (60-$ (Kişi Başı)  gezisine katılabilirler. Kore yarımadasının en büyük 4. nehri olan ve şehri ikiye bölen bu nehirde Seul halkının su kenarında yaşantısına tanıklık edebilirsiniz. Bu gezimizde Seul’u ışıklar altında görme imkânına sahip olacaksınız (akşam yemeği dâhil değildir). Tur bitimi konaklayacağımız otelimize doğru hareket edeceğiz. Geceleme otelimizde.
+
+	</p></div>
+	<button onclick="gostera3()"><b>3.gün</b></button>
+
+<div id="gün_as3" style="display: none;">
+	<span><b>SEUL</b></span>
+	<p>
+		Kahvaltıdan sonra serbest zaman. Dileyen konuklarımız ile ekstra Kuzey Kore sınırında bulunan Tarafsız Bölge / DMZ turu (120 $ Kişi Başı ) için hareket. Dünyada iki bölünmüş tek ülke olan Kore’yi bir başka açıdan görebileceksiniz. Son derece güvenli bu askerden arındırılmış tampon bölgeye gittiğimizde burada neler olduğunu hissedecek ve Kore’ye neler olduğunu da anlayabileceksiniz. Pasaportunuzu yanınızda bulundurmayı unutmayın. Tur sırasında Özgürlük köprüsünde yürüyecek, 1978 yılında bulunan Kuzey Korelilerin iki sınır arasında yaptığı 1.7 km uzunluğundaki Üçüncü Sızma Tüneline ineceksiniz. Dorasan tren istasyonunda mola verip, Gözetleme Merkezinden Kuzey Kore'ye bakacaksınız. Tur bitimi otelimize doğru hareket edeceğiz. Geceleme otelimizde.
+	</p></div>
+	<button onclick="gostera4()"><b>4.gün</b></button>
+
+<div id="gün_as4" style="display: none;">
+	<span><b>SEUL-OSAKA</b></span>
+	<p>
+		Kahvaltıdan sonra otelimizden check out ile birlikte, Seul havalimanına transfer oluyoruz check in ve bagaj işlemlerimiz sonrası yerel hava yolları uçuşu ile Osaka’ya uçuyoruz. Yaklaşık 2 saatlik uçuşumuzun ardından Osaka kentine varıyoruz. Pasaport işlemlerinin ardından panoramik şehir turumuza başlıyoruz. Osaka’ya geleneksel olarak "Milletin Mutfağı" veya Japonya’nın gürme yiyecekler başkenti gözüyle bakılmaktadır. Osaka sade anlamıyla "Büyük Tepe" ya da "Büyük Bayır" anlamına gelir. Osaka'da yapacağımız şehir turumuzda öncelikle 16. yüzyılda inşa edilen ve Japon mimarisinin en güzel örneklerinden birisi olan Osaka Kalesi ile başlıyoruz. Kale, 1585-1598 seneleri arasında Japonya’ya hükmeden ulusal birliği sağlayan "Toyotomi Hideyoshi" tarafından inşa ettirilmiş olup, kalenin inşasında da ortalama 100.000 işçinin çalıştığı bilinmektedir. Osaka Kalesi sonrası Japonya'nın en eski tapınaklarından birisi olan Shitennoji Tapınağı'nı ziyaret ediyoruz. Shitennoji, Japonya’nın en eski tapınaklarından birisi olup, 593 senesinde Japon Prensi Shotoku tarafından inşa ettirilmiştir. Bu ziyaretlerimiz sonrasında Osaka'nın çarşılarında serbest zaman ayırıyor, alışveriş ve yeme içme cenneti sayılabilecek bu şehrin lezzet duraklarını keşfetme şansına sahip oluyoruz.  Tur bitimi otelimize transfer. Geceleme otelimizde.
+
+
+	</p></div>
+	<button onclick="gostera5()"><b>5.gün</b></button>
+
+<div id="gün_as5" style="display: none;">
+	<span><b>OSAKA</b></span>
+	<p>
+		Otelimizde alacağımız kahvaltının ardından serbest zaman. Dileyen misafirlerimizle ekstra tam gün Kyoto ve Nara turu (170-$  Kişi Başı ).  Bu turumuzda önce Kyoto’ya gidiyoruz ve Bir Geyşa’nın anıları filminin çekimlerinde yer almış Fushimi İnari tapınağını geziyoruz. Arka arkaya yerleşmiş yüzlerce tanrı kapısı çok ilginizi çekecek. Daha sonra bir çok Japonya tanıtım filminde yer alan ünlü Bambu ormanı Arashiyama gezeceğimiz ikinci önemli nokta. Kyoto turumuzundan sonra Japonya'nın eski başkentlerinden olan ve aynı zamanda tarihte Japon sanatlarının, el sanatlarının, edebiyatın, kültürün ve sanayinin beşiği olan ve bir saat mesafedeki Nara'ya giderek Nara Büyük Buda'sının bulunduğu Todaiji Tapınağı'nı ziyaret ediyoruz. Todaji, dünyanın en büyük ahşap yapısı olmasının yanı sıra dünyanın en büyük Buda heykeli olan ve Japoncada "Daibutsu" denen heykeli de bünyesinde barındırmaktadır. Tapınak aynı zamanda, bir Budist okulu olan, Kegon'un da ana merkezidir. Naka şehrindeki yedi tarihi tapınak ve mekâna ek olarak UNESCO Dünya Mirası Listesi'nde yer almaktadır. Nara Park gezimiz sonrasında Osaka'ya hareket ediyoruz. Geceleme otelimizde.
+
+	</p></div>
+	<button onclick="gostera6()"><b>6.gün</b></button>
+
+<div id="gün_as6" style="display: none;">
+	<span><b>OSAKA-NAGOYA</b></span>
+	<p>
+		Sabah kahvaltımızın ardından otelimizden çıkış işlemlerimizi gerçekleştiriyoruz. Ardından özel aracımız ile birlikte Nagoya yolculuğumuza başlıyoruz. Otobüs ile 4 saatlik bir yolculuktan sonra Nagoya’ya varıyoruz.  Otel giriş işlemlerinin ardından odalara yerleşme ve serbest zaman. Konaklama otelimizde.
+
+	</p></div>
+	<button onclick="gostera7()"><b>7.gün</b></button>
+
+<div id="gün_as7" style="display: none;">
+	<span><b>NAGOYA-TOKYO</b></span>
+	<p>
+		Sabah kahvaltımızın ardından otelimizden çıkış işlemlerimizi gerçekleştiriyoruz. Ardından özel aracımız ile birlikte Tokyo yolculuğumuza başlıyoruz. Tokyo’ya varışımız ile birlikte yârim günlük şehir turumuza başlıyoruz. Şehir turumuzun ilk durağında ünlü Asakusa Bölgesini ve Sensoji Tapınağını geziyoruz. Daha sonra Tokyo Ulusal Müzesini içinde bulunduran Shinto ve Zen simgeleriyle ünlü Ueno parkını geziyoruz. Dileyen misafirlerimizi Japonya’nın meşhur kopeği olan Hachiko heykelini ve günde 1 milyon kişinin kullandığı yaya geçidini bünyesinde barından Shibuya bölgesinde bırakıp otelimize donuyoruz. Konaklama otelimizde.
+	</p></div>
+	<button onclick="gostera8()"><b>8.gün</b></button>
+
+	<div id="gün_as8" style="display: none;">
+	<span><b>TOKYO</b></span>
+	<p>
+		Kahvaltımızın ardından tam gün serbest zaman. Dileyen misafirlerimiz rehberimizin ekstra olarak düzenleyeceği öğle yemekli Nikko Turuna (210-$  Kişi Başı ) katılabilirler. UNESCO Dünya Mirası Listesi’nde yer alan Japonya’nın en güzel yerlerinde birisi olan Nikko’da önce Chunzenjiko’yu ve burada bulunan harika gölün etrafını gezecek ardından Kegon Şelale’leri ziyaret edeceğiz. Öğle yemeğimizin ardından 15000 işçi tarafından günümüzün parası ile üç yüz milyon Euro’ya mal olan Toshogu Mabedini göreceğiz. Gezimizin ardından Tokyo’ya dönüyoruz. Konaklama otelimizde. 
+
+Katılım çoğunluğuna göre 2. alternatif  çevre gezisi;
+
+Otelimizde alacağımız kahvaltının ardından serbest zaman. Dileyen misafirlerimiz rehberimizin ekstra olarak düzenleyeceği, Fuji & Hakone turuna (200-$  Kişi Başı ) katılabilirler. Turumuzda önce eski çağlardan beri Japon halkının kutsal kabul ederek taptığı, 3.776 metre yüksekliği ile Japonya’nın en yüksek dağı olan Kutsal Fuji’ye gideceğiz. Bu görkemli dağa yaklaşabileceğimiz uygun noktaya ulaştıktan sonra 1,5 saat uzaklıktaki Hakone’ye varıyoruz. Ashi Gölü’nde yapacağımız tekne gezisinde doğa harikası coğrafyada keyifli vakit geçirip, fotoğraf çekme fırsatı elde edeceğiz. Tur sonrası Tokyo’ya dönüyoruz. Konaklama otelimizde. 
+
+
+	</p></div>
+	<button onclick="gostera9()"><b>9.gün</b></button>
+
+<div id="gün_as9" style="display: none;">
+	<span><b>TOKYO-İSTANBUL</b></span>
+	<p>
+		Kahvaltıdan sonra şehri dilediğiniz gibi gezmek için serbest zaman. Rehberimizin belirleyeceği saatte Tokyo havalimanına doğru yola çıkıyoruz. Bilet ve pasaport işlemlerimiz ardından Türk Hava Yolları’na ait sefer ile Tokyo’dan (Haneda Havalimanı) İstanbul’a uçacağız. Gecemiz uçakta geçiyor. 
+
+Yerel saat ile sabaha doğru İstanbul Havalimanı’na varıyoruz ve turumuzun sonu. Bir sonraki keşfinizde görüşmek dileğiyle.
+	</p></div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+</html>

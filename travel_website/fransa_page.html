@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/form.js"></script>
+	<div class="rez" >
+		
+	<form name="form1" action="rezerasyon1.php" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>4 gece 5 gün</p>
+<p>Gidiş-dönüş:uçakla</p>
+
+	<p>Fiyat: <span id="totalPricef"></span>£</p>
+ 
+ 
+
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" name="email" required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel" required />
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" required />	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişif" oninput="myFunctionf()"/>
+  
+ <br><br>
+<a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>  
+</select>
+</form>
+<div class="total">
+		</div>
+</div>
+<div class="prfransa"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="gosterf()"><b>1.gün</b></button>
+
+<div id="gün_f" style="display: none;">
+	
+	<span>İstanbul – Paris & Le Havre & Honfleur - Paris</span>
+<p>
+Siz değerli misafirlerimiz ile Sabiha Gökçen Havalimanı Dış Hatlar gidiş terminalinde buluşma. Bagaj ve check-in işlemlerinin ardından Pegasus Hava Yolları’nın PC 1133 sefer sayılı uçuşu ile 10:30’da Fransa’nın başkenti Paris’e hareket. Yerel saat ile 13:20’de varış. Varışımızı takriben şehir turumuza başlıyoruz. Turumuzda Eyfel Kulesi, Champs Elysees, Da Vinci şifresine konu olmuş Louvre Müzesi ve piramit, D’orsay Müzesi, Zafer Takı, Etoile Meydanı, Napolyon’un mezarı, Meclis binası, 3. Alexandre Köprüsü, 1990 yılı sanayi fuarı amaçlı yapılmış Grand Palace ve Petite Palace, 1789 Fransız devrimine konu olmuş Concorde Giyotin Meydanı görülecek yerler arasındadır. Turumuz sonrası özel otobüsümüz ile Normandiya bölgesine geçiyoruz.  Ardından Le Havre ve Honfleur turumuz ile güne devam ediyoruz. Fransa’nın en büyük ahşap katedrali olan Saint Catherina Katedrali, eski tuz depoları, eski liman göreceğimiz önemli yerler arasında. Turumuzun bitiminde Normandiya bölgesinin merkezi kabul edilen La Havre’ye geçiyoruz. Bu ilgi çekici kent, Transatlantik geçişi yapan Fransız denizcilerin uğradığı bir limandı. Le Havre aynı zamanda "La Porte Océane" (okyanus kapısı) olarak da bilinir. Normandiya'nın Rouen'den önceki en büyük şehriydi. Aynı zamanda Fransa'daki ilk büyük ihracat kapısıydı olan Le Havre, Temmuz 2005'ten beri UNESCO Dünya Mirasları listesinde yer almaktadır. Tur bitiminde otelimize transfer. Geceleme Paris otelimizde. 	
+	</p>
+</div>
+<button onclick="gosterf2()"><b>2.gün</b></button>
+
+<div id="gün_f2" style="display: none;">
+	<span>Paris</span>
+	
+<p>
+Otelimizde alınacak olan sabah kahvaltımızın ardından dileyen misafirlerimiz, rehberimiz tarafından ekstra olarak düzenlenecek olan Eiffel Kulesi & Seine Nehri tekne gezisi & Montmarte ressamlar tepesi & Sacre Coeur Bazilikası & Notre Dame Katedrali turuna katılabilirler. (85 EUR) Turumuzda Eiffel Kulesinin 2. Katına çıkarak bu büyülü kenti yukarıdan keşfetme şansına da sahip olacaksınız. Sonrasında Seine nehri üzerinde 1 saatlik tekne gezisi ile adalar etrafında tur atıp Paris’i ve köprülerini nehirden görmenin keyfini çıkaracaksınız. Ardından tarihi geçmişe dayanan ve Paris’in en yüksek tepesi olan Montmarte’a teleferik ile çıkıyoruz.  Sacre Coeur Bazilikası ile ünlenen, hem bohem yaşam tarzını göreceğiniz hem de alışveriş fırsatı bulacağınız Tertre Meydanında serbest zamanımızın ardından romanlara, şarkılara ve filmlere konu olmuş meşhur Notre Dame Katedralini ziyarete gidiyoruz. Katedral gezisi sonrasında Paris’in sıfır noktasında vereceğimiz resim molasının ardından otelimize dönüyoruz. Akşam arzu eden misafirlerimiz rehberimiz tarafından ekstra olarak düzenlenecek olan Paris by night turuna katılabilirler. (35 EUR) Turumuz  sonrası otelimize transfer. Geceleme otelimizde.
+
+
+	</p>
+</div>
+<button onclick="gosterf3()"><b>3.gün</b></button>
+
+<div id="gün_f3" style="display: none;">
+	
+	<span>Paris & Disneyland</span>
+<p>
+Kahvaltımızın ardından serbest zaman. Dileyen misafirlerimiz için Disneyland Turu fırsatı. Her yaşa hitap eden aktiviteleri ile sizleri masalsı bir dünyaya götürecek olan Hayaletler evi, Mark Twain’in Gemisi, çılgın maden treni, Indiana Jones, Robinson’un evi, Karayip korsanları mağarası, bebekler dünyası, yıldızlar turu, 3 boyutlu sinema, uzaya yolculuk, denizaltı macerası gibi aktivitelerle keyifli vakit geçirebilirsiniz. Walt Disney Film Stüdyoları Parkında ise Aşçı Ratatuy Macerası, kalbinizi durduracak Hollywood Oteli Asansörü, Aerosmith Hız Treni,Stand Şov, Armageddon, Stüdyo tramvay turu gibi keyifli aktiviteler sizleri bekliyor. Disneyland bilet temini konusunda tur rehberimizden yardım alabilirsiniz. Geceleme otelimizde. 
+
+
+*Disneyland biletleri dinamik fiyatlandırma sistemi ile belirlenmektedir. Bu sebepten dolayı güncel park bileti fiyatları rehberimiz tarafından sizlere iletilecektir.
+	</p>
+</div>
+<button onclick="gosterf4()"><b>4.gün</b></button>
+
+<div id="gün_f4" style="display: none;">
+	
+	<span>Paris</span>
+<p>
+Otelimizde alınacak sabah kahvaltısının ardından dileyen misafirlerimiz, rehberimiz tarafından ekstra olarak düzenlenecek olan Paris Outlet Turuna katılabilirler. (40 EUR) Dünyaca ünlü markaların büyük indirimler yaptığı ünlü outlet bölgesinde alışveriş keyfi yaşayabilir, dilerseniz bölgedeki kafelerde günün yorgunluğunu atabilirsiniz. Turumuz sonrasında serbest zaman. Ardından otelimize transfer. Geceleme otelimizde.
+	</p>
+</div>
+<button onclick="gosterf5()"><b>5.gün</b></button>
+
+<div id="gün_f5" style="display: none;">
+	<span>Paris – İstanbul</span>
+	
+<p>
+Kahvaltımızın ardından serbest zaman. Rehberimizin bilgilendireceği saatte Havalimanı’na hareket ediyoruz. Pasaport ve bagaj işlemlerimizin ardından Pegasus Hava Yolları PC 1136 sefer sayılı uçuşu ile saat 17.25’de İstanbul’a hareket ediyoruz. 21.45’te varıyoruz. 
+	</p>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+<?php
+include("rezervasyon1.php");
+?>
+</html>

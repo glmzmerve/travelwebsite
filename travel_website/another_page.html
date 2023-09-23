@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+
+	<title>Tur Detay</title>
+</head>
+<body>
+	<script src="js/form.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<div class="rez"  ><form name="amerika"></form>
+		
+	<form name="form1" action="rezerasyon1.php" method="post" onsubmit="required()">
+<div class="price" >
+<p>İstanbul çıkışlı</p>
+	<p>8 gece 9 gün</p>
+<p>Gidiş-dönüş:uçakla</p>
+	<p>Fiyat: <span  id="totalPrice"></span>$</p>
+ 
+ 
+
+</div>
+
+<br><br>
+<h4>TUR BİLGİLERİ</h4>
+
+<br><br>
+		<label for="ad"><b>Ad:</b> </label>
+	<input type="text" name="ad" data-error="Zorunlu alan" required />	
+<br><br>
+<label for="soyad"><b>Soyad:</b> </label>
+	<input type="text" name="soyad" required />	
+<br><br>
+	<label for="email"> <b>Email:</b></label>
+	<input type="email" id= "email" name="email"  required />	
+<br><br>
+<label for="password"><b>Şifre:</b></label>
+	<input type="password" name="password" required />	
+<br><br>
+
+<label for="tel"><b>Telefon numarası:</b></label>
+	<input type="tel" name="tel" required />
+		<br><br>
+	<label for="date"><b>Başlangıç Tarihi:</b></label>
+	<input type="date" name="inputdate" id="inputdate" required />	
+	
+<br><br>
+<label for="kişi"><b>Kişi Sayısı</b></label><br>
+
+ <input type="number" step="0" max="4" min="1" value="0" id="kişi" oninput="myFunction()"/>
+  
+ <br><br>
+  
+ 
+        <a  href="#"><input type="submit" id="submit" name="rzv"  value="Rezervasyon Yap" class="btn"></a>
+               
+        
+  
+ 
+
+</select>
+</form>
+
+</div>
+<div class="pramerika"  >
+<h4><font color="red"><b>Tur Programı</b></font></h4>
+<button onclick="goster()"><b>1.gün</b></button>
+
+<div id="gün_a" style="display: none;">
+ <p>
+
+   Belirtilen havalimanı dış hatlarda bulunma. Uçağa biniş işlemlerinin ardından Amerika’nın teknoloji merkezi San Francisco'ya hareket. Varışımızın ardından havalimanında sizleri bekleyen rehberiniz ile buluşmanın ardından otelimize transfer. Odaların alımı saat 15:00'den sonra olacağı için isterseniz lobby'de dinlenebilir ya da rehberlerinizin opsiyonel olarak düzenleyeceği San Francisco Şehir turuna katılabilirsiniz. Turumuzda bu güzel şehri tanıtan bir tur yapacağız. Civic Center, Golden Gate Bridge, Balıkçı Rıhtımı ve Çin mahallesi, Twin Peaks, Hippilerin yerleştiği Haig and Ashbury, güzel sanatlar sarayı, Lombard Street göreceğimiz yerlerden bazılarıdır. Tur sonrası Akşam yemeği için vereceğimiz serbest zamanın ardından otelimize transfer. Geceleme otelimizde.     	  	
+
+</p>
+</div>
+
+
+<button onclick="goster2()"><b>2.gün</b></button>
+
+<div id="gün_a2" style="display: none;">
+ <p>
+Sabah serbest zaman. Yada arzu edenler rehberlerinin ekstra olarak düzenleyeceği Sausolito-Tekneden Alkadraz – Fisherman’s Wharf – Cable Car – Union Square turuna katılabilirsiniz. Özel aracımızla San Francisco’nun eskiden yüksek rütbeli memurlarının ve şimdi ise en zenginlerinin oturduğu Sausolito’ya hareket ediyoruz. Yaklaşık 15 dakikalık bir bir otobüs yolculuğu ile çok şirin bir kasaba olan Sausalito’ya gideceğiz. Kordon boyunda yürü-yüş yaparken birbirinden güzel evleri görecek kahvenizi deniz kenarındaki Cafe’lerde San Francisco manzarasına karşı yudumlayacaksınız. Ardından tekne ile San Francisco’ya geri dönerken bir zamanlar dünyanın kaçılması imkansız tek hapishanesi olarak bilinen Alkadraz’ı tekneden fotoğraflama şansını bulacaksınız. Aynı zamanda San Francisco şehrinin muhteşem manzarasına tanık olacaksınız. Teknemiz San Francisco’nun simgelerinden biri olan Pier 39’a yanaşıyor. Burada güneşlenen deniz aslanlarını kısa bir ziyaretten sonra, rehberinizin tavsiye-leri doğrultusunda seçeceğiniz restaurantta serbest alacağınız öğle yemeğinden sora meşhur San Francisco sokaklarını filmlerden de çok iyi bildiğimiz Cable Car (kırmızı tramvaylar) ile Union Square'e keyifli bir yolculuk. San Francisco’nun en hareketli bölgesinde Fashion District (moda bölgesi) ve Çin mahallesi sizleri bekliyor. Akşam yemeği için vereceğimiz serbest zama-nın ardından otelimize transfer. Geceleme otelimizde.
+</p>
+</div>
+
+<button onclick="goster3()"><b>3.gün</b></button>
+
+<div id="gün_a3" style="display: none;">
+ <p>
+Sabah otelimizden ayrılıyor ve San Francisco Havalimanına gidiyoruz. Amerikan iç hat uçuşu ile yapacağımız 1,5 saatlik bir uçuştan sonra Nevada eyaletinin en önemli turistik merkezi olan, dünyanın en büyük otellerine de ev sahipliği yapan gecelerin şehri Las Vegas’a varıyoruz. Havalimanında bizleri bekleyen aracımız ile otelimize doğru yola çıkıyoruz. Baş döndürücü şehre girer girmez meşhur Las Vegas Bulvarını ve otelleri anlatan bir panoramik tur yapıyoruz. Otele yerleşme ve ardından arzu edenler rehberlerinin opsiyonel olarak düzenleyeceği Premium Outlet turuna katılabilirler. Tur sonrası otele transfer. Akşam Las Vegas’ın dünyaca ünlü şovları ve şansınız denemek için binlerce masa ve slot sizleri bekliyor. Geceleme otelimizde.
+
+</p>
+</div>
+<button onclick="goster4()"><b>4.gün</b></button>
+
+<div id="gün_a4" style="display: none;">
+ <p>
+Sabah serbest vakit. Arzu eden misafirlerimiz rehberlerinin opsiyonel olarak düzenleyeceği Grand Canyon turuna  katılabilirler. Bu turumuzda sabah otelimizden özel aracımız ile sabah Las Vegas’tan Arizona Eyaletinde bulunan Grand Canyon’a doğru yola çıkıyoruz. Yaklaşık 2 saatlik bir yolculuktan sonra Grand Canyon’a varıyoruz. Varışımızı takiben helikopterleri organize eden görevliler bizleri helikopterlere götürüyor. 5-6 kişilik helikopterler Canyon’un en altında bulunan Colorado Nehrine doğru inerken muhteşem Canyon manzarasıyla büyüleneceksiniz. Aşağıda bizi bekleyen teknelerle nehir üzerinde bir tur yapıyoruz. Daha Sonra Helikopterler bizleri yukarıya çıkarırken yine muhteşem manzaralara tanık oluyoruz. Dönüşte bizlere çevreyi gezdirecek otobüslere biniyoruz. Sn nokta olan Eagle Point'te (Kartal Noktası) Canyon'un muhteşem fotoğraflarını 800 metrelik uçurumun hemen yanından çekme imkânı buluyoruz. Yine burada Hualapai Kızılderililerin çadırlarını fotoğraflama imkânımız oluyor. Buradan tekrar otobüse binerek Guano Point’e gidiyoruz. Hualapai Kızılderililerin hazırladığı yemekleri yerken yine başka bir muhteşem manzaraya tanık oluyoruz. Yemekten sonra Terminale geri dönüp aracımıza binerek Las Vegas’a doğru yola çıkıyoruz. Hayatta bir kez mutlaka görülmesi gereken ve Dünya'nın 7 doğal harikasından biri olan bu muhteşem Canyon'un sahibi olan Hualapai Kızılderilileriyle tanışma fırsatı olan bu turu kaçırmamanızı tavsiye ederiz. Geceleme otelimizde.
+</p>
+</div>
+<button onclick="goster5()"><b>5.gün</b></button>
+
+<div id="gün_a5" style="display: none;">
+ <p>
+Sabah, otelden ayrılıyor ve Los Angeles’a doğru yola çıkıyoruz. Yolda vereceğimiz kahvaltı molasından sonra Los Angeles‘a varış. Arzu edenler rehberlerinin opsiyonel olarak düzenleyeceği Los Angeles Şehir turuna katılabilirler. İlk durağımız Los Angeles şehrinin merkezi olarak bilinen Downtown. Burada göreceğimiz yerler Olvera caddesi, Los Angeles şehrinin siluetini oluşturan gökdelenler ve şehrin ilk kurulduğunda oluşan tarihi merkezler. Daha sonra, filmlerden anımsayacağınız Hollywood Bulvarı. Burada Oscar törenlerinin yapıldığı Kodak tiyatrosu (Yeni adıyla "Dolby Theater"), ünlü filmlerin galalarının yapıldığı Çin tiyatrosu, sinema ve müzik sanatçılarının el ve ayak izleri, ayrıca Şöhretler Yolu göreceğimiz yerler arasında. Ayrıca bu bölgeden şehrin simgesi olan Dev Harflerle yazılı ünlü Hollywood yazısını fotoğraflama şansını bulacaksınız. Daha sonra ünlü Sunset Strip bulvarından Santa Monica bulvarına geçerek Beverly Hills’e ulaşıyoruz. Burada Beverly Hills’in meşhur sembolünü göreceğiz. Daha sonra’’Pretty Woman’’ filminin çekildiği, dünyanın en lüks mağazalarının yer aldığı, meşhur Rodeo Drive’da kısa bir yürüyüş yapıp, Elvis Presley ve John Lennon gibi yıldızların senelerce ikamet adresi olan "Beverly Wilshire Otel"ini göreceğiz. Rodeo Drive’dan ayrıldıktan sonra yemek yemek ve alışveriş yapmak için rehberiniz sizi meşhur Farmers Market ve The Grove a götürecek. Tur sonrası otelimize geri dönüş.   
+</p>
+</div>
+
+<button onclick="goster6()"><b>6.gün</b></button>
+
+<div id="gün_a6" style="display: none;">
+ <p>
+Sabah serbest vakit. Arzu edenler rehberlerinin opsiyonel olarak düzenleyeceği Universal Studios turuna katılabilirler. Bu turumuzda ilk durak Universal olacak. Dünya'nın en büyük parklarından biri olan bu parkta Amerikan rüyasının oluşmasında etkili olan filmlerin nasıl çekildiğini ve kahramanlarını yakından görme imkânı bulacaksınız. Dünyaca ünlü yönetmen Steven Spielberg’in yaratıcı danışmanlığını yaptığı Universal Studios’un neden dünyanın 1 numaralı stüdyosu ve eğlence parkı olduğunu çok daha iyi anlayacaksınız. Fakat bu park sadece bir eğlence değil dünya sinema tarihinin ve teknolojisinin yüzyıla varan deneyiminin de bir ürünüdür. 40’ın üzerinde şov, film seti ve eğlence sizleri kendi içine çekip eğlendirmekle kalmayıp, nefeslerinizi keserek filmlerin içinde hissi yaşatacaktır. Turdan sonra akşam arzu eden misafirlerimiz rehberlerinin opsiyonel olarak düzenleyeceği Santa Monica turuna katılabilirler. Sokak sanatçılarının gösterileriyle dolu ışıl ışıl Santa Monica’da bulunan şık kafelerde bir şeyler içerek yorgunluğunuzu atabilir, akşam yemeğinizi bu güzel yerde bulunan restoranlardan birinde alabilirsiniz. Geceleme otelimizde.   	
+
+</p>
+</div>
+<button onclick="goster7()"><b>7.gün</b></button>
+
+<div id="gün_a7" style="display: none;">
+ <p>
+Sabah serbest vakit. Arzu eden misafirlerimiz rehberlerinin opsiyonel olarak düzenleyeceği San Diego turuna katılabilirler. Yıllardır Amerika’nın en güzel şehri seçilen San Diego da ilk durağımız La Jolla. Fok plajı ve sahilleriyle ünlü La Jolla’ da doğanın ve lüks evlerin uyumunu görecek ve bol bol fotoğraf çekeceksiniz. La Jolla dan ayrılıp 2. durağımız olan Old Town’a gidiyoruz. California’nın doğum yeri olan Old Town da kendinizi adeta Meksika’da hissedeceğiniz bir atmosfer sizleri bekliyor. Old Town sonrasında; Sea Port Village, Midway uçak gemisi, II. Dünya Savaşının simgesel görseli olan Unconditional Surrender Statue heykeli, Amerikan Deniz kuvvetlerini üssünün bulunduğu ve aynı zamanda Amerika'nın en büyük ahşap binası olan ve “Bazıları Sıcak Sever” filminin de çekildiği tarihi Hotel Del Coronado’nun da bulunduğu Coronado adası ziyaret edeceğimiz yerler arasındadır. Turdan sonra otele dönüş ve geceleme otelimizde.
+</p>
+</div>
+<button onclick="goster8()"><b>8.gün</b></button>
+
+<div id="gün_a8" style="display: none;">
+ <p>
+ 	Sabah odalarımızı boşaltıyoruz çevreyi gezmek ve dinlenmek iç in serbest olacağız. Arzu edenler rehberlerinin opsiyonel olarak düzenleyeceği Sahil Kentleri turuna katılabilirler Amerika turları içerisinde kesinlikle kaçırılmaması gerekli bu programda Amerika’nın en yoğun ikinci limanı olan Long Beach’de, ünlü Queen Mary gemisini, Formula 1 yarışlarının yapıldığı pisti göreceğiz (Grand Prix of Long Beach). Pasifik Okyanusu kıyısından güneye doğru inerek; Seal Beach, Huntington Beach, Newport Beach, Corona del Mar, Laguna Beach görülecek diğer yerler arasındadır.  Turumuz sonrasında rehberimizin bildireceği saatte Los Angeles Havalimanına transfer oluyoruz ve İstanbul’a hareket. Geceleme uçakta.
+</p>
+</div>
+<button onclick="goster9()"><b>9.gün</b></button>
+
+<div id="gün_a9" style="display: none;">
+ <p>
+İstanbul'a varış ve turumuzun sonu. Hizmet kalitemizi arttırmak adına sizlere vereceğimiz anket formlarını doldurmanız bizim için önemlidir. Bir sonraki seyahatinizde görüşmek üzere.
+</p>
+</div>
+
+</div>
+</body>
+<script type="text/javascript">
+$(function(){
+    var dtToday = new Date();
+ 
+    var month = dtToday.getMonth() + 1;
+    var day = dtToday.getDate();
+    var year = dtToday.getFullYear();
+    if(month < 10)
+        month = '0' + month.toString();
+    if(day < 10)
+     day = '0' + day.toString();
+    var maxDate = year + '-' + month + '-' + day;
+    $('#inputdate').attr('min', maxDate);
+});
+</script>
+<?php
+include("rezerasyon1.php");
+?>
+
+</html>
